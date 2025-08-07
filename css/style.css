@@ -105,9 +105,16 @@ body {
 
 .hero-subtitle {
     font-size: 1.3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     opacity: 0.9;
     animation: fadeInUp 1s ease 0.2s both;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+    animation: fadeInUp 1s ease 0.3s both;
 }
 
 .hero-buttons {
@@ -178,6 +185,92 @@ section {
     background: #f8f9fa;
 }
 
+/* Experience Section */
+.experience {
+    background: white;
+}
+
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #3498db;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.timeline-item:nth-child(odd) {
+    flex-direction: row;
+}
+
+.timeline-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.timeline-date {
+    flex: 0 0 150px;
+    background: #3498db;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 2rem;
+    height: fit-content;
+}
+
+.timeline-content {
+    flex: 1;
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.timeline-roles {
+    margin-top: 1rem;
+}
+
+.role {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.role:last-child {
+    border-bottom: none;
+}
+
+.role h4 {
+    color: #3498db;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.role p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
 .about-content {
     max-width: 800px;
     margin: 0 auto;
@@ -188,6 +281,35 @@ section {
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
     color: #555;
+}
+
+.contact-info {
+    background: #ecf0f1;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+}
+
+.contact-info p {
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.skill-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.skill-category {
+    text-align: left;
+}
+
+.skill-category h4 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
 }
 
 .skills {
@@ -369,6 +491,45 @@ section {
     font-size: 1.5rem;
 }
 
+.achievements {
+    margin-top: 3rem;
+}
+
+.achievements h3 {
+    color: white;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.achievement-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.achievement-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.achievement-link:hover {
+    color: #3498db;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.achievement-icon {
+    font-size: 1.2rem;
+}
+
 /* Footer */
 .footer {
     background: #1a252f;
@@ -444,6 +605,32 @@ section {
 
     .skill-tags {
         justify-content: center;
+    }
+
+    .skill-categories {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        flex-direction: column !important;
+        margin-left: 40px;
+    }
+
+    .timeline-item:nth-child(even) {
+        flex-direction: column !important;
+    }
+
+    .timeline-date {
+        margin: 0 0 1rem 0;
+        width: fit-content;
+    }
+
+    .achievement-links {
+        align-items: stretch;
     }
 }
 
