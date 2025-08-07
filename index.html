@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김개발 - 개발자 포트폴리오</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">김개발</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">홈</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">소개</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">프로젝트</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">연락처</a>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <h1 class="hero-title">안녕하세요, <span class="highlight">김개발</span>입니다</h1>
+            <p class="hero-subtitle">창의적인 문제 해결을 통해 가치를 만드는 개발자</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+                <a href="#contact" class="btn btn-secondary">연락하기</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">소개</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>안녕하세요! 저는 JavaScript와 React를 활용하여 웹 애플리케이션을 개발하는 풀스택 개발자입니다.</p>
+                    <p>사용자 경험을 중시하며, 깔끔하고 효율적인 코드 작성을 지향합니다. 새로운 기술을 배우는 것을 좋아하고, 문제 해결을 통해 성장하는 개발자입니다.</p>
+                    
+                    <div class="skills">
+                        <h3>기술 스택</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Next.js</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Express</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+  <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">프로젝트</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <div class="project-image no-image">
+                        <div class="project-placeholder">
+                            <span class="project-icon">🚀</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">할일 관리 웹앱</h3>
+                        <p class="project-description">React와 Firebase를 활용한 실시간 할일 관리 애플리케이션. 드래그 앤 드롭, 실시간 동기화, 반응형 디자인을 구현했습니다.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">CSS3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">라이브 데모</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image no-image">
+                        <div class="project-placeholder">
+                            <span class="project-icon">💰</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">가계부 관리 시스템</h3>
+                        <p class="project-description">Next.js와 PostgreSQL을 사용한 개인 가계부 관리 시스템. 차트를 통한 지출 분석과 카테고리별 통계 기능을 제공합니다.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Chart.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">라이브 데모</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image no-image">
+                        <div class="project-placeholder">
+                            <span class="project-icon">🌤️</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">날씨 정보 대시보드</h3>
+                        <p class="project-description">OpenWeather API를 활용한 실시간 날씨 정보 대시보드. 위치 기반 날씨 조회와 5일 예보, 즐겨찾기 기능을 구현했습니다.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">REST API</span>
+                            <span class="tech-tag">Chart.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">라이브 데모</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">연락처</h2>
+            <div class="contact-content">
+                <p>프로젝트 협업이나 채용 제안이 있으시면 언제든 연락주세요!</p>
+                <div class="contact-links">
+                    <a href="mailto:kimdev@example.com" class="contact-link">
+                        <span class="contact-icon">📧</span>
+                        kimdev@example.com
+                    </a>
+                    <a href="https://github.com/kimdev" class="contact-link" target="_blank">
+                        <span class="contact-icon">🐙</span>
+                        GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/kimdev" class="contact-link" target="_blank">
+                        <span class="contact-icon">💼</span>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 김개발. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
