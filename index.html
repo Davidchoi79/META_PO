@@ -173,7 +173,7 @@
             <h2 class="section-title">주요 성과</h2>
             <div class="projects-grid">
                 
-                <div class="project-card">
+                <div class="project-card" data-project="meta-platform">
                     <div class="project-image no-image">
                         <div class="project-placeholder">
                             <span class="project-icon">❄️</span>
@@ -189,12 +189,13 @@
                             <span class="tech-tag">Airflow</span>
                         </div>
                         <div class="project-links">
+                            <button class="project-link detail-btn">상세보기</button>
                             <a href="https://www.snowflake.com/ko/resources/ebook/establishment-of-food-service-meta-index-platform-based-on-sikshin-and-snowflake/" class="project-link" target="_blank">스노우플레이크 공식 사례</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-project="widget-solution">
                     <div class="project-image no-image">
                         <div class="project-placeholder">
                             <span class="project-icon">🎯</span>
@@ -210,12 +211,13 @@
                             <span class="tech-tag">Analytics</span>
                         </div>
                         <div class="project-links">
+                            <button class="project-link detail-btn">상세보기</button>
                             <a href="https://www.standbywidget.io" class="project-link" target="_blank">Standbywidget.io</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-project="sikshin-service">
                     <div class="project-image no-image">
                         <div class="project-placeholder">
                             <span class="project-icon">🍽️</span>
@@ -231,6 +233,7 @@
                             <span class="tech-tag">Growth Hacking</span>
                         </div>
                         <div class="project-links">
+                            <button class="project-link detail-btn">상세보기</button>
                             <a href="https://siksinhot.com" class="project-link" target="_blank">siksinhot.com</a>
                         </div>
                     </div>
@@ -277,6 +280,19 @@
             </div>
         </div>
     </section>
+
+    <!-- Project Detail Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title"></h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="modal-content"></div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
